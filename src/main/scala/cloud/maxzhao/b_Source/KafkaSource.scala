@@ -15,7 +15,7 @@ import java.util.Properties
 object KafkaSource {
   def main(args: Array[String]): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
-    val kafkaBrokers = "222.25.172.64:9092,n001:9092,n002:9092,n003:9092"
+    val kafkaBrokers = "n000:9092,n001:9092,n002:9092,n003:9092"
     val consumerGroup = "readData"
     val dataTopic = "DataGenerationTopic"
     val properties = new Properties()
